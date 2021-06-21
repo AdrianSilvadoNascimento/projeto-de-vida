@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <title>Projeto de Vida</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,14 +11,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      <header>
-        <img src="images/foto-minha.jpg" class="img-fluid" alt="">
+</head>
+<body>
+    <header class="container-fluid"> <!--Cabeçaalho-->
         <h1>Adrian Silva do Nascimento</h1>
-          
-      </header>
-      <nav class="sticky-top">
+        <img src="images/foto-no-Shops.jpeg" class="img-fluid" alt="Foto de Adrian">
+        
+    </header> <!--Cabeçalho-->
+    <nav class="sticky-top"> <!--Navegcao-->
         <ul>
             <li>
                 <a href="#um">QuemSou</a>
@@ -54,62 +54,181 @@
                 <a href="#onze">Plano(B)</a>
             </li>               
         </ul>
-    </nav>
-      <section id="um">Quem Sou</section>
-      <section id="dois">Melhorias</section>
-      <section id="tres">Gostos</section>
-      <section id="quatro">Desgostos</section>
-      <section id="cinco">Imprevistos</section>
-      <section id="seis">Missão</section>
-      <section id="sete">Parceiros</section>
-      <section id="oito">Metas</section>
-      <section id="nove">Rotina</section>
-      <section id="dez">Finanças</section>
-      <section id="onze">Plano B</section>
-    <!--O que eu tenho que responder com essa landingPage
-    Primeira Parte:
-    Quem sou? -Brasileiro, -Branco, -Noivo
-    Pontos fortes: ex. Inteligente, Atencioso....
-    Pontos Fracos: ex. Impaciente, Tímido....
+    </nav> <!--Navegacao-->
 
+    <section id="um" class="container-fluid">
+        <h2>Quem sou?</h2>
+        <div class="row">
+            <div class="col-md-6 esses card">
+                <h3>Brasileiro Nato</h3>
+                <h3>19 anos de idade</h3>
+                <h3>Noivo</h3>
+                <h3>Programador</h3>
+            </div>
+            <div class="col-md-6 esses card">
+                <h3>Estudante de Análise e Desenvolvimento de Sistemas</h3>
+                <h3>Amante da tecnlogia</h3>
+            </div>
+        </div>
+        
 
-    -----------------------------------------
-    
-    Segunda Parte
-    No que preciso melhorar? ex. Comunicação Profissional, paciência....
+        <div class="row">
+            <div class="col-md-6 card">
+                <h2>Pontos Fortes</h2>
+                <p>Inteligente</p>
+                <p>Comunicativo</p>
+                <p>Proativo</p>
+                <p>Responsável</p>
+                <p>Pontual</p>
+                <p>Assíduo</p>
+                </div>
+            <div class="col-md-6 card">
+                <h2>Pontos Fracos</h2>
+                <p>Preocupado</p>
 
-    -----------------------------------------
-
-    Terceira Parte
-    O que eu gosto de fazer? ex. Programar, comer, dormir....
-
-    -----------------------------------------
-
-    Quarta Parte
-    O que eu não gosto? ex. pessoas comodadas, vitimismo.........
-
-    -----------------------------------------
-
-    Quinta Parte
-    Fatores que podem ameçar meus planos: Ser pai, acidentes...........
-
-    -----------------------------------------
-
-    Sexta Parte
-    Minha missão: ex. Ser efetivado, me formar.......
-
-    -----------------------------------------
-
-    Sétima Parte
-    Meus parceiros => Helô
-
-    -----------------------------------------
-
-    Oitava Parte
-    Minhas metas
-    Curto prazo: ex. Juntar mil reais
-    Médio prazo: ex. Viajar em lua de mel com Helô
-    Longo prazo: ex. Ingressar na X-teaam, sair do Brasil
+            </div>
+        </div>
+    </section>
+    <section id="dois" class="container-fluid">
+        <h2>No que preciso melhorar</h2>
+        <p>Fluência no inglês</p>
+        <p>Minha lógica de programação</p>
+        <p>Minha preocupação</p>
+    </section>
+    <section id="tres" class="container-fluid">
+        <h2>O que eu gosto de fazer</h2>
+        <p>Eu gosto muito de estudar sobre qualquer coisa, porém, minha paixão é estudar sobre tecnologia</p>
+        <p>Gosto de cozinhar com a noiva, sempre temos ideias ótimas</p>
+        <p>Adoro ficar em casa</p>
+        <p>Gosto de planejar minhas finanças futuras</p>
+    </section>
+    <section id="quatro" class="container-fluid">
+        <h2>O que eu não gosto</h2>
+        <h3>São coisas bem específicas, pois eu não sou de me incomodar fácil</h3>
+        <p>Não gosto de me programar para algum evento e no final não conseguir ir/cumprir/fazer</p>
+        <p>Não gosto de multidão</p>
+        <p>Não gosto de deixar as coisas saírem do controle</p>
+    </section>
+    <section id="cinco" class="container-fluid">
+        <h2>Fatores que podem ameaçar meus plano</h2>
+        <h3>São poucos os fatores que podem ameçar meus planos, pois eu me planejo prevendo os eventuais imprevistos</h3>
+        <p>Porém, um fator que possa atrapalhar meus planos é eu sofrer um acidente</p>
+        <p>Outro é perder a coordenação motora das mãos</p>
+    </section>
+    <section id="seis" class="container-fluid">
+        <h2>Minha missão</h2>
+        <div class="row">
+            <div class="col-md-3 esses card">
+                <h3>Me formar</h3>
+            </div>
+            <div class="col-md-3 esses card">
+                <h3>Desenvolver Projetos que ajudem a sanar os problemas dos usuários</h3>
+            </div>
+            <div class="col-md-3 esses card">
+                <h3>Receber em dólar $</h3>
+            </div>
+            <div class="col-md-3 text-center card">
+                <h3>Ingressar na empresa do meu sonho - a X-Team</h3>
+                <p>A X-team é uma comunidade/empresa para programadores que residem ao redor do globo terrestre,
+                <br> prestando serviços para gigantes do mercado, como por exemplo: a Riot games, AWS(Amazon), entre outras.</p>
+                <p>E eu sinto que não estou distante de alcançar a minha tão sonhada vaga!</p>
+            </div>
+        </div>
+    </section>
+    <section id="sete" class="container-fluid">
+        <h2>Meus parceiros</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/eu-ela.jpg" class="img-fluid" alt="Eu e Ela fazendo biquinho">
+            </div>
+            <div class="col-md-4">
+                <img src="images/praia.jpg" class="img-fluid" alt="Eu e Ela na praia">
+            </div>
+            <div class="col-md-4">
+                <img src="images/eu-helo.jpg" class="img-fluid" alt="Eu e Ela">
+            </div>
+        </div>
+    </section>
+    <section id="oito" class="container-fluid">
+        <h2>Minhas metas</h2>
+        <div class="row">
+            <div class="col-md-4 card">
+                <h3>Curto Prazo:</h3>
+                <h3 class="text-center">Juntar R$2000,00 - 2 mil reais</h3>
+            </div>
+            <div class="col-md-4 card">
+                <h3>Médio Prazo:</h3>
+                <h3 class="text-center">Viajar com Helô no final do ano (Do ano vigente - 2021)</h3>
+            </div>
+            <div class="col-md-4 card">
+                <h3>Longo Prazo:</h3>
+                <h3 class="text-center">Sair do Brasil - Montar minha empresa de desenvolvimento</h3>
+            </div>
+        </div>
+    </section>
+    <section id="nove" class="container-fluid">
+        <h2>Minha Rotina</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>De segunda à sexta</h2>
+                <ul class="card">
+                    <li>6:40 acordar</li>
+                    <li>7:00 trabalhar no portal (portal L&C)</li>
+                    <li>9:30 tomar café</li>
+                    <li>10:00 faculdade</li>
+                    <li>13:10 trabalhar na Nissan</li>
+                    <li>19:00 ficar com a noiva</li>
+                    <li>21:00 revisar o portal (portal L&C)</li>
+                    <li>22:30 dormir</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h2>Sábado</h2>
+                <ul class="card">
+                    <li>7:00 acordar</li>
+                    <li>8:30 trabalhar no restaurante da família da noiva (Galeto Pekin)</li>
+                    <li>16:30 estudar</li>
+                    <li>18:00 ficar com a noiva</li>
+                    <li>20:00 revisar o portal (portal L&C)</li>
+                    <li>22:00 dormir</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h2>Domingo</h2>
+                <ul class="card">
+                    <li>7:00 acordar</li>
+                    <li>8:30 trabalhar no restaurante da família da noiva (Galeto Pekin)</li>
+                    <li>16:30 estudar</li>
+                    <li>18:00 ficar com a noiva</li>
+                    <li>20:00 revisar o portal (portal L&C)</li>
+                    <li>22:00 dormir</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="dez" class="container-fluid">
+        <h2>Minhas finanças</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Salário Nissan:</h2>
+            </div>
+            <div class="col-md-4">
+                <h2>Salário Portal LeC:</h2>
+            </div>
+            <div class="col-md-4">
+                <h2>Salário Galeto Pekin:</h2>
+            </div>
+        </div>
+    </section>
+    <section id="onze" class="container-fluid">
+        <h2>Meu plano (B)</h2>
+        <ul>
+            <li><h2>Procurar revisar meus planos</h2></li>
+            <li><h2>Replanejar o que deu errado</h2></li>
+            <li><h2>Seguir caminho diferente do antes iniciado</h2></li>
+        </ul>
+    </section>
+<!-----------------------------------------
 
     -----------------------------------------
 

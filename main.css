@@ -11,7 +11,7 @@ html {
 
 body {
   font-size: 1em;
-  background-color: #CAF0F8 !important;
+  background-color: #02041b !important;
 }
 
 header h1 {
@@ -20,7 +20,19 @@ header h1 {
   font-weight: bolder;
   font-size: 3em;
   text-align: center;
-  margin: 5vh 0;
+  margin: 1vh 0;
+}
+
+header img {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+  border-radius: 20%;
+  width: 20%;
+  margin-bottom: 2vh;
+  -webkit-filter: drop-shadow(-1px 1px 8px #fff);
+          filter: drop-shadow(-1px 1px 8px #fff);
 }
 
 nav ul {
@@ -41,7 +53,7 @@ nav ul li {
 }
 
 nav ul a {
-  padding: 10px;
+  padding: 12px;
   color: #0077B6;
 }
 
@@ -52,8 +64,80 @@ nav ul a:hover {
 }
 
 section {
-  font-family: teste3;
+  color: white;
   height: 100vh;
+}
+
+section h2 {
+  padding: 50px 0 15px 0;
+  margin-bottom: 15px;
+  text-align: center !important;
+  font-size: 3em;
+  border-bottom: 5px solid #90e0ef;
+  font-family: teste3;
+}
+
+#seis h2, #oito h2 {
+  margin-bottom: 25vh;
+}
+
+#seis .esses h3, #seis .esses p, #oito .esses h3, #oito .esses p {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#oito h3 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#sete h2 {
+  margin-bottom: 15vh;
+}
+
+#sete img {
+  border-radius: 50%;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  -webkit-filter: drop-shadow(-1px 1px 5px #fff);
+          filter: drop-shadow(-1px 1px 5px #fff);
+}
+
+#sete img:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-5vh);
+          transform: translateY(-5vh);
+}
+
+#nove ul {
+  margin-left: 2px;
+}
+
+#onze h2 {
+  margin-bottom: 0;
+  padding: 50px 0 5px 0;
+}
+
+#onze ul {
+  list-style: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.6) !important;
+  color: #023E8A;
+  padding: 10px 30px;
+  border-radius: 25px !important;
+  -webkit-filter: drop-shadow(-1px 1px 5px #fff);
+          filter: drop-shadow(-1px 1px 5px #fff);
+  margin: 5vh 0;
 }
 
 @font-face {
