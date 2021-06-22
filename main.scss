@@ -11,6 +11,7 @@ body{
     background-color: #02041b !important;
 }
 header{
+    animation: aparecer .3s ease-in;
     h1{
         color: #023E8A;
         font-family: teste1;
@@ -38,6 +39,7 @@ nav{
         overflow-x: auto;
         background-color: #90e0ef;
         z-index: 2;
+        animation: rolar 1s ease-in;
         li{
             padding: 10px;
         }
@@ -64,9 +66,35 @@ section{
         font-family: teste3;
     }
 }
-#seis, #oito{
+#btnVoltar{
+    position: fixed;
+    bottom: 25px;
+    right: 35px;
+    z-index: 15;
+    i{
+        color: #023E8A;
+        
+    }
+    & :hover{
+        text-decoration: none;
+        color: #90e0ef;
+    }
+}
+#um{
+    animation: aparecer .5s ease-in;
+    .row{
+        justify-content: space-between;
+    }
+    p{
+        padding: 0 100px;
+    }
+}
+#dois{
     h2{
-        margin-bottom: 25vh;
+        margin-bottom: 35vh;
+    }
+    .row{
+        justify-content: space-between;
     }
     .esses{
         h3, p{
@@ -78,9 +106,51 @@ section{
         }
     }
 }
-#oito{
-    h3{
-      font-family: 'Times New Roman', Times, serif;  
+#tres{
+    .row{
+        justify-content: space-between;
+    }
+    p{
+        text-align: center;
+    }
+    h2{
+        margin-bottom: 30vh;
+    }
+}
+#quatro{
+    .row{
+        justify-content: space-between;
+    }
+    h2{
+        margin-bottom: 30vh;
+    }
+}
+#cinco{
+    h2{
+        margin-bottom: 30vh;
+    }
+    h3, p{
+        text-align: center;
+    }
+    .row{
+        justify-content: space-between;
+    }
+}
+#seis, #oito{
+    .row{
+        justify-content: space-between;
+    }
+    h2{
+        margin-bottom: 25vh;
+    }
+    .esses{
+        h3, p{
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
     }
 }
 #sete{
@@ -97,16 +167,25 @@ section{
         transform: translateY(-5vh);
     }
 }
+#oito{
+    h3{
+      font-family: 'Times New Roman', Times, serif;  
+    }
+}
 #nove{
+    h2.aqui{
+        margin-bottom: 25vh;
+    }
     ul{
         margin-left: 2px;
     }
 }
-#onze{
-    h2{
-        margin-bottom: 0;
-        padding: 50px 0 5px 0;
+#dez{
+    h2.aqui{
+        margin-bottom: 25vh;
     }
+}
+#onze{
     ul{
         list-style: none;
         position: relative;
@@ -122,6 +201,37 @@ section{
     border-radius: 25px !important;
     filter: drop-shadow(-1px 1px 5px #fff);
     margin: 5vh 0;
+}
+.esses{
+    h3,p{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+@keyframes rolar{
+    from{
+        padding-left: 100vw;
+        opacity: 0.5;
+    }
+    to{
+        padding-left: 0;
+        opacity: 1;
+    }
+}
+@keyframes aparecer{
+    from{
+        transform: translateX(-40vw);
+        opacity: 0;
+        filter: blur(.5px);
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+        filter: blur(0);
+    }
 }
 
 @font-face{
